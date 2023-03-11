@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhatRightNow!</title>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+</head>
+
+<body>
+
+<header   class="siteName"> 
+    <h1> <strong>What <span style="color:red">Right</span> Now</strong></h1>
+    <h2> <span style="color:blueviolet; font-size: 12px">Make the most of your location</span> </h2>
+  </header>
+  <div class="columns ">
+    <div class="column  is-4 section">
+          <h1 class="title">
+            Hello World
+          </h1>
+          <p class="subtitle">
+            My first website with <strong>Bulma</strong>!
+          </p>
+    </div>
+    <div class="column is-4">
+      <section id="locSearch" class="weather">
+        <section class="inputcity">
+          <input type="text" class="inputValue" placeholder="Enter City">
+          <button class="button" id="res">Search Area</button>
+          <!-- <button class="js-modal-trigger" data-target="modal-js-example">
+            Open JS example modal
+          </button> -->
+          <!-- <button class="restaurant" id="res">Best Restaurants</button> -->
+          <!-- <input class="button" type="reset" value="Reset input"> -->
+        </section>
+      </section>
+    </div>
+    <div class="column is-4 ">
+      <div class="card">
+        <div class="columns is-multiline">
+          <div class="column is-full">
+            <div class="columns">
+              <h2 class="column is-6 temp7">Location</h2>
+              <h3 class="column is-6">date</h3>
+            </div>
+          </div>
+          <div class="column is-full">
+            <div class="columns">
+              <div class="column is-4">Coudy</div>
+              <div class="column is-4">Wind</div>
+              <div class="column is-4">Precp</div>
+            </div>
+          </div>
+          <div class="column is-full">
+            <div class="columns">
+              <div class="column is-6">
+                <img src="" alt="weather-image">
+              </div>
+              <div class="column is-6">
+                <div class="columns is-multiline">
+                  <h2 class="column is-12">Temp</dh2>
+                  <h3 class="column is-12">Feel like</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="column is-full">
+            <div class="columns">
+              <div class="column is-3">
+                <div class="columns is-multiline">
+                  <h3 class="column is-12">Day</h3>
+                  <h3 class="column is-12">High</h3>
+                  <h3 class="column is-12">Low</h3>
+                  <h3 class="column is-12">Cloudy or not</h3>
+                </div>
+              </div>
+              <div class="column is-3">
+                <div class="columns is-multiline">
+                  <h3 class="column is-12">Day</h3>
+                  <h3 class="column is-12">High</h3>
+                  <h3 class="column is-12">Low</h3>
+                  <h3 class="column is-12">Cloudy or not</h3>
+                </div>
+              </div>
+              <div class="column is-3">
+                <div class="columns is-multiline">
+                  <h3 class="column is-12">Day</h3>
+                  <h3 class="column is-12">High</h3>
+                  <h3 class="column is-12">Low</h3>
+                  <h3 class="column is-12">Cloudy or not</h3>
+                </div>
+              </div>
+              <div class="column is-3">
+                <div class="columns is-multiline">
+                  <<h3 class="column is-12">Day</h3>
+                  <h3 class="column is-12">High</h3>
+                  <h3 class="column is-12">Low</h3>
+                  <h3 class="column is-12">Cloudy or not</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <img class="sky" src="./assets/images/weather.png" alt="weather" class="w3-image" class="cloud" width="100"
+          height="100">
+        <div class="city">
+          <h2 class="temp7">---</h2>
+        </div>
+        <div>
+          <h3 class="temp">---</h3>
+        </div>
+        <div>
+          <h3 class="temp6">---</h3>
+        </div>
+        <span class="temp5">---</span>
+
+        <span class="temp3">---</span>
+        <span class="temp2">---</span>
+        <span class="temp1">---</span>
+        <span class="temp4">---</span> -->
+      </div>
+
+    </div>
+  </div>
+  <div class="columns is-multiline">
+    <div class="column is-one-third card" id="resData">
+      <!-- <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img class="Food8" src="https://s3-media2.fl.yelpcdn.com/bphoto/_NZbE1MSjaMCd5wv9djwXA/o.jpg"
+              alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4" class="Food1">Resturant name</p>
+            <p class="subtitle is-6" class="Food3">Rating</p>
+          </div>
+        </div>
+        <div class="content">
+          short description
+          <br>
+          <a class="Food5">location address</a>
+          <a class="Food6"></a>
+          <br>
+          <time>operating hours</time>
+        </div>
+      </div> -->
+    </div>
+    <!-- <div class="column is-one-third">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="https://s3-media2.fl.yelpcdn.com/bphoto/-9_zGtE06T5enTBmwjJhUQ/o.jpg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media-content">
+          <p class="title is-4">Resturant name</p>
+          <p class="subtitle is-6">Rating</p>
+        </div>
+      </div>
+      <div class="content">
+        short description
+        <br>
+        <a>location address</a>
+        <br>
+        <time>operating hours</time>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://s3-media4.fl.yelpcdn.com/bphoto/GOYFcarpLlvYvevwXW1W6A/o.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4">Resturant name</p>
+            <p class="subtitle is-6">Rating</p>
+          </div>
+        </div>
+        <div class="content">
+          short description
+          <br>
+          <a>location address</a>
+          <br>
+          <time>operating hours</time>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://s3-media1.fl.yelpcdn.com/bphoto/49HVXYzhvdJVbs6sjsv57A/o.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4">Resturant name</p>
+            <p class="subtitle is-6">Rating</p>
+          </div>
+        </div>
+        <div class="content">
+          short description
+          <br>
+          <a>location address</a>
+          <br>
+          <time>operating hours</time>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://s3-media2.fl.yelpcdn.com/bphoto/Pnvf5VP0DYuT0CTz2EUZ2A/o.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4">Resturant name</p>
+            <p class="subtitle is-6">Rating</p>
+          </div>
+        </div>
+        <div class="content">
+          short description
+          <br>
+          <a>location address</a>
+          <br>
+          <time>operating hours</time>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="https://s3-media3.fl.yelpcdn.com/bphoto/LRwt5Hi2KTK0rmtEFRQdvg/o.jpg" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media-content">
+          <p class="title is-4">Resturant name</p>
+          <p class="subtitle is-6">Rating</p>
+        </div>
+      </div>
+      <div class="content">
+        short description
+        <br>
+        <a>location address</a>
+        <br>
+        <time>operating hours</time>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://s3-media3.fl.yelpcdn.com/bphoto/3xh0YLJvSgZDW8qR7zgKkw/o.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4">Resturant name</p>
+            <p class="subtitle is-6">Rating</p>
+          </div>
+        </div>
+        <div class="content">
+          short description
+          <br>
+          <a>location address</a>
+          <br>
+          <time>operating hours</time>
+        </div>
+      </div>
+    </div>
+    <div class="column is-one-third">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="https://s3-media4.fl.yelpcdn.com/bphoto/61Cbsl-feoC4uH718oX9mA/o.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media-content">
+            <p class="title is-4">Resturant name</p>
+            <p class="subtitle is-6">Rating</p>
+          </div>
+        </div>
+        <div class="content">
+          short description
+          <br>
+          <a>location address</a>
+          <br>
+          <time>operating hours</time>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- <section class="displayWeather">
+      <h1 class="temp">----°F</h1>
+        <p class="temp1">---</p>
+        <p class="temp2">---</p>
+        <p class="temp3">---</p>
+        <p class="temp4">---</p>
+        <p class="temp5">---</p>
+      <p class="temp6">---</p>
+    <p class="temp7">
+
+    </section> -->
+
+  <!-- <section class="displayRestaurant">
+    <h1 class="Food"><img id="rImage" src=""> </h1>
+    <p class="Food1">---</p>
+    <p class="Food2">---</p>
+    <p class="Food3">---</p>
+    <p class="Food4">---</p>
+    <p class="Food5">---</p>
+    <p class="Food6">---</p>
+    <p class="Food7">---</p>
+
+  </section> -->
+
+
+
+  <!-- <h1 class ="temp">---</h1> -->
+  <!-- <div class="sky">
+        <div class="sun"></div>
+        <div class="cloud">
+            <div class="circle-small"></div>
+            <div class="circle-tall"></div>
+            <div class="circle-medium"></div> -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>WhatRightNow</strong> by <a href="#">group6-pop</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+
+  <!-- <div id="modal-js-example" class="modal">
+    <div class="modal-background"></div>
+  
+    <div class="modal-content">
+      <div class="box">
+     Your content
+      </div>
+    </div>
+  
+    <button class="modal-close is-large" aria-label="close"></button> -->
+  </div>
+
+</body>
+
+</html>

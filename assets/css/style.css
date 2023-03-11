@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+html,
+body {
+    background-color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .siteName {
+    text-align: center;
+    background: aquamarine;
+    font-style: italic;
+    font-size: 16px;
+  } */
+
+
+.inputValue {
+    font-size: medium;
+    color: black;
+    font-family: 'Calibri', sans-serif;
+    width: 30%;
+    /* margin-left: 70%; */
+    padding: 10px 20px;
+    border: none;
+    outline: auto;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+button.button {
+    width: 15%;
+    /* margin-left: 70%; */
+    padding: 10px 20px;
+    border: none;
+    outline:auto;
+    background-color:darkgray;
+    color:black;
+    border-radius: 10px;
+    
+}
+
+button.button:focus{
+    outline:none;
+}
+
+button.button:hover{
+    border: 1px solid rgb(122, 112, 112) 
+}
+
+button.restaurant {
+    width: 15%;
+    /* margin-left: 85%; */
+    padding: 10px 20px;
+    border: none;
+    outline:auto;
+    background-color:darkgray;
+    color:black;
+    border-radius: 10px;
+    
+}
+
+button.restaurant:focus{
+    outline:none;
+}
+
+button.restaurant:hover{
+    border: 1px solid rgb(122, 112, 112) 
+}
+
+button {
+    display:inline;
+}
+
+.displayWeather{
+    display: flex;
+    margin-left: 55%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Calibri', sans-serif;
+}
+
+.displayRestaurant{
+    display: flex;
+    margin-left: 85%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Calibri', sans-serif;
+}
+
+.weather {
+    display: flexbox;
+}
+
+.card {
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 5px 30px;
+    width: 290px;
+    height: 470px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+    -webkit-animation: open 2s cubic-bezier(.39, 0, .38, 1);
+}
+
+@-webkit-keyframes open {
+    from {
+        padding: 0 30px;
+        height: 0;
+    }
+    to {
+        height: 470px;
+    }
+}
+
+/* h1 {
+    float: right;
+    color: #666;
+    font-weight: 300;
+    font-size: 6.59375em;
+    line-height: .2em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s;
+} */
+
+h2 {
+    font-weight: 300;
+    font-size: 2.25em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1);
+}
+
+h3 {
+    float: left;
+    margin-right: 33px;
+    color: #777;
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .1s;
+}
+
+span {
+    margin-left: 24px;
+    color: #999;
+    font-weight: 300;
+}
+
+span span {
+    margin-left: 0;
+}
+
+/* .dot {
+    font-size: .9em;
+}
+
+.sky {
+    position: right;
+    margin-top: 108px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #03A9F4;
+    /* -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s; */
+/* } */
+
+/* .sun {
+    position: right;
+    top: -3px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FFEB3B;
+    /* -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .5s;
+}  */
+
+/* .cloud {
+    /* border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);position: right; */
+    /* top: 60px;
+    left: 200px; */
+    /* object-position: right top;
+    object-fit: none;
+} */ 
+
+/* .cloud:before,
+.cloud:after {
+    position: right;
+    display: block;
+    content: "";
+}
+
+.cloud:before {
+    margin-left: -10px;
+    width: 51px;
+    height: 18px;
+    background: #fff;
+}
+
+.cloud:after {
+    position: absolute;
+    top: -10px;
+    left: -22px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 50px -6px 0 6px #fff, 25px -19px 0 10px #fff; */
+/* } */
+
+.sky {
+    position: right;
+    display: block;
+
+}
+
+table {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
